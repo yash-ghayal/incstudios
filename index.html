@@ -1,9 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Inc Studios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inc Studio | Video editing in minutes, from ₹499</title>
+<meta name="description" content="Inc Studio is a creative agency and the first ecommerce platform for video editing. Ask for a service, get it done in minutes. No onboarding. Editing from ₹499.">
+<link rel="icon" href="mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--o:#ff3301;--k:#000;--w:#f3f1ee;--g:#b4b0aa;--pad:clamp(20px,5vw,72px);
+--glass:rgba(255,255,255,.06);--edge:rgba(255,255,255,.16)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--k);color:var(--w);font:400 17px/1.6 'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-optical-sizing:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--o);outline-offset:3px}
+.wrap{padding-inline:var(--pad);max-width:1360px;margin-inline:auto;position:relative}
+
+/* zero-gravity backdrop */
+.space{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(120% 90% at 50% 0,#150500 0,#000 60%)}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;animation:drift var(--t) ease-in-out infinite alternate}
+.o1{width:46vmax;height:46vmax;background:var(--o);left:-14vmax;top:-10vmax;--t:26s}
+.o2{width:34vmax;height:34vmax;background:#7a1400;right:-10vmax;top:30vh;--t:32s;animation-delay:-8s}
+.o3{width:26vmax;height:26vmax;background:#ff6a3d;left:35vw;bottom:-14vmax;opacity:.32;--t:38s;animation-delay:-15s}
+@keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(8vmax,6vmax,0) scale(1.15)}}
+
+/* glass */
+.glass{background:var(--glass);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);border:1px solid var(--edge);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 30px 80px -30px rgba(255,51,1,.35)}
+.float{animation:float var(--t,9s) ease-in-out infinite;animation-delay:var(--d,0s)}
+@keyframes float{0%,100%{transform:translate3d(0,0,0) rotate(var(--r,0deg))}50%{transform:translate3d(0,-16px,0) rotate(calc(var(--r,0deg) + 1.2deg))}}
+.px{transition:transform .5s cubic-bezier(.2,.7,.2,1);transform:translate3d(var(--x,0),var(--y,0),0)}
+
+/* nav */
+header{position:sticky;top:14px;z-index:20;margin-top:14px}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:10px 12px 10px 22px;border-radius:999px}
+.bar img{height:40px;display:block}
+nav{display:flex;gap:26px;align-items:center;font-weight:500}
+nav a{text-decoration:none;color:var(--g)}
+nav a:hover{color:var(--w)}
+.btn{display:inline-block;background:var(--o);color:#fff;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:999px;box-shadow:0 10px 40px -8px var(--o);transition:transform .2s,background .2s,color .2s}
+.btn:hover{background:var(--w);color:var(--k);transform:translateY(-3px)}
+nav .btn{padding:11px 22px;color:#fff}
+nav .btn:hover{color:var(--k)}
+.btn.ghost{background:var(--glass);color:var(--w);box-shadow:inset 0 0 0 1px var(--edge);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.btn.ghost:hover{background:var(--w);color:var(--k)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;align-items:center;min-height:min(88vh,860px);padding-block:clamp(40px,6vw,80px)}
+h1{font-weight:300;font-size:clamp(46px,8vw,124px);line-height:.98;letter-spacing:-.035em}
+h1 em{font-weight:500;color:var(--o);display:block}
+.hero p{max-width:31em;font-size:clamp(17px,1.7vw,20px);color:var(--g);margin-top:28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.stage{position:relative;height:clamp(380px,46vw,620px)}
+.stage>*{position:absolute}
+.mark{width:58%;left:20%;top:12%;filter:drop-shadow(0 0 60px rgba(255,51,1,.55))}
+.mark img{width:100%;display:block;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip{padding:14px 22px;border-radius:26px;font-weight:700}
+.chip small{display:block;font-weight:500;color:var(--g);font-size:13px}
+.c1{right:0;top:2%;--r:4deg;--t:8s}
+.c2{left:0;top:54%;--r:-5deg;--t:10s;--d:-3s}
+.c3{right:6%;bottom:0;--r:2deg;--t:11s;--d:-6s}
+.price{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(44px,5vw,72px);line-height:1;letter-spacing:-.03em;display:block;color:var(--o)}
+
+/* sections */
+section{padding-block:clamp(56px,9vw,120px)}
+h2{font-weight:300;font-size:clamp(36px,5.6vw,84px);line-height:1;letter-spacing:-.03em;max-width:15ch}
+.lead{color:var(--g);max-width:34em;margin-top:18px;font-size:19px}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:52px}
+.steps li{padding:32px;border-radius:30px}
+.steps li:nth-child(2){margin-top:40px}
+.n{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:72px;line-height:1;color:var(--o)}
+.steps h3,.why h3{font-weight:500;font-size:28px;margin:12px 0 8px;letter-spacing:-.02em}
+.steps p,.why p{color:var(--g)}
+
+.svc{margin-top:52px;border-radius:34px;padding:8px 34px}
+.row{display:grid;grid-template-columns:1.1fr 1.6fr auto;gap:8px 40px;align-items:baseline;padding-block:28px;border-bottom:1px solid var(--edge)}
+.row:last-child{border:0}
+.row h3{font-weight:400;font-size:clamp(26px,3.2vw,42px);letter-spacing:-.025em}
+.row p{color:var(--g)}
+.tag{font-weight:700;white-space:nowrap}
+.feat h3,.feat .tag{color:var(--o)}
+.feat .tag{font-family:'Fraunces',serif;font-size:clamp(28px,3.2vw,42px);font-weight:600}
+
+.why ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:52px}
+.why li{padding:34px;border-radius:30px}
+.why li:nth-child(even){margin-top:34px}
+
+.cta .panel{border-radius:44px;padding:clamp(36px,7vw,90px);text-align:center;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(255,51,1,.34),rgba(255,255,255,.05))}
+.cta h2{margin-inline:auto;max-width:13ch}
+.cta p{color:#e4dfd9;font-size:20px;margin:20px auto 0;max-width:28em}
+.cta .btn{margin-top:34px;background:var(--w);color:var(--k);box-shadow:0 10px 50px -8px rgba(255,255,255,.4)}
+.cta .btn:hover{background:var(--o);color:#fff}
+footer{padding-block:34px 44px;display:flex;flex-wrap:wrap;gap:14px 40px;justify-content:space-between;align-items:center;color:var(--g);font-size:15px}
+footer img{height:34px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--o)}
+
+@media(max-width:860px){
+ .hero{grid-template-columns:1fr;min-height:0}
+ .stage{height:420px}
+ nav a:not(.btn){display:none}
+ .row{grid-template-columns:1fr}
+ .steps li:nth-child(2),.why li:nth-child(even){margin-top:0}
+ .svc{padding:4px 22px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-  <h1>Welcome to Inc Studios</h1>
+<div class="space" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+
+<div class="wrap">
+ <header>
+  <div class="bar glass">
+   <a href="#top" aria-label="Inc Studio home"><img src="logo.png" alt="Inc Studio creative agency"></a>
+   <nav>
+    <a href="#how">How it works</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why us</a>
+    <a class="btn" href="#order">Order now</a>
+   </nav>
+  </div>
+ </header>
+
+ <main id="top" class="hero">
+  <div>
+   <h1>Your video, <em>edited in minutes.</em></h1>
+   <p>Inc Studio is a creative agency that works like an online store. Pick a service, send your footage, get it back. No onboarding, no calls, no agency runaround.</p>
+   <div class="actions">
+    <a class="btn" href="#order">Get my video edited</a>
+    <a class="btn ghost" href="#services">See services</a>
+   </div>
+  </div>
+  <div class="stage" aria-hidden="true">
+   <div class="px mark" data-depth="14"><img src="mark.png" alt=""></div>
+   <div class="px c1" data-depth="34"><div class="chip glass float"><small>Video editing from</small><span class="price">₹499</span></div></div>
+   <div class="px c2" data-depth="26"><div class="chip glass float"><small>Onboarding</small>None. Zero.</div></div>
+   <div class="px c3" data-depth="42"><div class="chip glass float"><small>Delivered in</small>Minutes</div></div>
+  </div>
+ </main>
+</div>
+
+<section id="how"><div class="wrap">
+ <h2>Three steps. No paperwork.</h2>
+ <ol class="steps">
+  <li class="glass float" style="--t:11s"><div class="n">1</div><h3>Ask for a service</h3><p>Choose what you need, like a reel edit or a YouTube cut, and send your footage.</p></li>
+  <li class="glass float" style="--t:13s;--d:-4s"><div class="n">2</div><h3>We edit it</h3><p>Our editors start straight away. No account setup, no onboarding forms.</p></li>
+  <li class="glass float" style="--t:12s;--d:-7s"><div class="n">3</div><h3>Get it in minutes</h3><p>Your finished video is delivered fast, ready to post.</p></li>
+ </ol>
+</div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <h2>What we do</h2>
+ <p class="lead">Start with a quick edit today. Bring us the bigger brand work when you're ready.</p>
+ <div class="svc glass">
+  <div class="row feat"><h3>Video editing</h3><p>Reels, shorts, YouTube videos and ads, cut and polished by real editors.</p><div class="tag">from ₹499</div></div>
+  <div class="row"><h3>Videography</h3><p>We shoot your product, your team or your story, and edit it too.</p><div class="tag">Custom quote</div></div>
+  <div class="row"><h3>Content editing</h3><p>Captions, thumbnails, hooks and repurposed clips for every platform.</p><div class="tag">Custom quote</div></div>
+  <div class="row"><h3>Social media management</h3><p>Planning, posting and growing your pages so you don't have to.</p><div class="tag">Custom quote</div></div>
+  <div class="row"><h3>Branding</h3><p>Logo, colours, tone and a look that people remember.</p><div class="tag">Custom quote</div></div>
+ </div>
+</div></section>
+
+<section id="why" class="why" style="padding-top:0"><div class="wrap">
+ <h2>Not your usual agency.</h2>
+ <ul>
+  <li class="glass float" style="--t:12s"><h3>The first of its kind</h3><p>The first ecommerce platform where you buy video editing like you buy anything else online.</p></li>
+  <li class="glass float" style="--t:10s;--d:-5s"><h3>Zero onboarding</h3><p>No onboarding charge and no onboarding process. Ask, and it's done.</p></li>
+  <li class="glass float" style="--t:14s;--d:-2s"><h3>Honest pricing</h3><p>Editing starts at ₹499. You see the price before you order.</p></li>
+ </ul>
+</div></section>
+
+<section id="order" class="cta" style="padding-top:0"><div class="wrap">
+ <div class="panel glass">
+  <h2>Got footage? Send it over.</h2>
+  <p>Tell us what you need and we'll get started. Video editing from just ₹499.</p>
+  <!-- CHANGE 91XXXXXXXXXX to your WhatsApp number (country code + number, no + or spaces) -->
+  <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Inc%20Studio%2C%20I%20want%20a%20video%20edited." target="_blank" rel="noopener">Order on WhatsApp</a>
+ </div>
+ <footer>
+  <img src="logo.png" alt="Inc Studio">
+  <span>© <script>document.write(new Date().getFullYear())</script> Inc Studio. All rights reserved.</span>
+  <!-- CHANGE the email below to your real one -->
+  <a href="mailto:hello@incstudios.in">hello@incstudios.in</a>
+ </footer>
+</div></section>
+
+<script>
+(function(){
+ if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+ var els=[].slice.call(document.querySelectorAll('.px'));
+ addEventListener('pointermove',function(e){
+  var cx=e.clientX/innerWidth-.5,cy=e.clientY/innerHeight-.5;
+  els.forEach(function(el){var d=+el.dataset.depth;el.style.setProperty('--x',(cx*d).toFixed(1)+'px');el.style.setProperty('--y',(cy*d).toFixed(1)+'px')});
+ },{passive:true});
+})();
+</script>
 </body>
 </html>
