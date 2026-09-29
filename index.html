@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inc Studio | Video editing in minutes, from ₹499</title>
-<meta name="description" content="Inc Studio is a creative agency and the first ecommerce platform for video editing. Ask for a service, get it done in minutes. No onboarding. Editing from ₹499.">
+<title>Inc Studio | Your creative buddy. Footage in, story out.</title>
+<meta name="description" content="Inc Studio is your creative buddy. Send your footage and we add story, your mindset and what is trending, then hand it back as a stunning visual experience. From ₹499.">
 <link rel="icon" href="mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--o:#ff3301;--k:#000;--w:#f3f1ee;--g:#b4b0aa;--pad:clamp(20px,5vw,72px);
+:root{--o:#ff3301;--k:#050505;--w:#f3f1ee;--g:#9a958f;--pad:clamp(20px,5vw,72px);
 --glass:rgba(255,255,255,.06);--edge:rgba(255,255,255,.16)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -21,15 +21,15 @@ a{color:inherit}
 .wrap{padding-inline:var(--pad);max-width:1360px;margin-inline:auto;position:relative}
 
 /* zero-gravity backdrop */
-.space{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(120% 90% at 50% 0,#150500 0,#000 60%)}
-.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;animation:drift var(--t) ease-in-out infinite alternate}
-.o1{width:46vmax;height:46vmax;background:var(--o);left:-14vmax;top:-10vmax;--t:26s}
-.o2{width:34vmax;height:34vmax;background:#7a1400;right:-10vmax;top:30vh;--t:32s;animation-delay:-8s}
-.o3{width:26vmax;height:26vmax;background:#ff6a3d;left:35vw;bottom:-14vmax;opacity:.32;--t:38s;animation-delay:-15s}
+.space{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(120% 80% at 50% -10%,#1a0803 0,#050505 62%)}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:drift var(--t) ease-in-out infinite alternate}
+.o1{width:34vmax;height:34vmax;background:#3a0d04;left:-14vmax;top:-10vmax;--t:26s}
+.o2{width:28vmax;height:28vmax;background:#2a0a04;right:-10vmax;top:30vh;--t:32s;animation-delay:-8s}
+.o3{width:22vmax;height:22vmax;background:#3a0d04;left:35vw;bottom:-14vmax;opacity:.35;--t:38s;animation-delay:-15s}
 @keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(8vmax,6vmax,0) scale(1.15)}}
 
 /* glass */
-.glass{background:var(--glass);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);border:1px solid var(--edge);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 30px 80px -30px rgba(255,51,1,.35)}
+.glass{background:var(--glass);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);border:1px solid var(--edge);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 30px 80px -30px rgba(0,0,0,.8)}
 .float{animation:float var(--t,9s) ease-in-out infinite;animation-delay:var(--d,0s)}
 @keyframes float{0%,100%{transform:translate3d(0,0,0) rotate(var(--r,0deg))}50%{transform:translate3d(0,-16px,0) rotate(calc(var(--r,0deg) + 1.2deg))}}
 .px{transition:transform .5s cubic-bezier(.2,.7,.2,1);transform:translate3d(var(--x,0),var(--y,0),0)}
@@ -41,7 +41,7 @@ header{position:sticky;top:14px;z-index:20;margin-top:14px}
 nav{display:flex;gap:26px;align-items:center;font-weight:500}
 nav a{text-decoration:none;color:var(--g)}
 nav a:hover{color:var(--w)}
-.btn{display:inline-block;background:var(--o);color:#fff;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:999px;box-shadow:0 10px 40px -8px var(--o);transition:transform .2s,background .2s,color .2s}
+.btn{display:inline-block;background:var(--o);color:#fff;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:999px;box-shadow:0 8px 30px -10px rgba(255,51,1,.6);transition:transform .2s,background .2s,color .2s}
 .btn:hover{background:var(--w);color:var(--k);transform:translateY(-3px)}
 nav .btn{padding:11px 22px;color:#fff}
 nav .btn:hover{color:var(--k)}
@@ -51,12 +51,12 @@ nav .btn:hover{color:var(--k)}
 /* hero */
 .hero{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;align-items:center;min-height:min(88vh,860px);padding-block:clamp(40px,6vw,80px)}
 h1{font-weight:300;font-size:clamp(46px,8vw,124px);line-height:.98;letter-spacing:-.035em}
-h1 em{font-weight:500;color:var(--o);display:block}
+h1 em{font-weight:400;color:var(--w);opacity:.72;display:block}
 .hero p{max-width:31em;font-size:clamp(17px,1.7vw,20px);color:var(--g);margin-top:28px}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .stage{position:relative;height:clamp(380px,46vw,620px)}
 .stage>*{position:absolute}
-.mark{width:58%;left:20%;top:12%;filter:drop-shadow(0 0 60px rgba(255,51,1,.55))}
+.mark{width:42%;left:26%;top:18%;opacity:.28;filter:drop-shadow(0 0 40px rgba(255,51,1,.25))}
 .mark img{width:100%;display:block;animation:spin 40s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .chip{padding:14px 22px;border-radius:26px;font-weight:700}
@@ -73,7 +73,7 @@ h2{font-weight:300;font-size:clamp(36px,5.6vw,84px);line-height:1;letter-spacing
 .steps{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:52px}
 .steps li{padding:32px;border-radius:30px}
 .steps li:nth-child(2){margin-top:40px}
-.n{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:72px;line-height:1;color:var(--o)}
+.n{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:72px;line-height:1;color:var(--g)}
 .steps h3,.why h3{font-weight:500;font-size:28px;margin:12px 0 8px;letter-spacing:-.02em}
 .steps p,.why p{color:var(--g)}
 
@@ -83,22 +83,52 @@ h2{font-weight:300;font-size:clamp(36px,5.6vw,84px);line-height:1;letter-spacing
 .row h3{font-weight:400;font-size:clamp(26px,3.2vw,42px);letter-spacing:-.025em}
 .row p{color:var(--g)}
 .tag{font-weight:700;white-space:nowrap}
-.feat h3,.feat .tag{color:var(--o)}
+.feat .tag{color:var(--o)}
 .feat .tag{font-family:'Fraunces',serif;font-size:clamp(28px,3.2vw,42px);font-weight:600}
 
 .why ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:52px}
 .why li{padding:34px;border-radius:30px}
 .why li:nth-child(even){margin-top:34px}
 
-.cta .panel{border-radius:44px;padding:clamp(36px,7vw,90px);text-align:center;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(255,51,1,.34),rgba(255,255,255,.05))}
+.cta .panel{border-radius:44px;padding:clamp(36px,7vw,90px);text-align:center;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(255,51,1,.12),rgba(255,255,255,.04))}
 .cta h2{margin-inline:auto;max-width:13ch}
 .cta p{color:#e4dfd9;font-size:20px;margin:20px auto 0;max-width:28em}
-.cta .btn{margin-top:34px;background:var(--w);color:var(--k);box-shadow:0 10px 50px -8px rgba(255,255,255,.4)}
+.cta .btn{margin-top:34px;background:var(--w);color:var(--k);box-shadow:none}
 .cta .btn:hover{background:var(--o);color:#fff}
 footer{padding-block:34px 44px;display:flex;flex-wrap:wrap;gap:14px 40px;justify-content:space-between;align-items:center;color:var(--g);font-size:15px}
 footer img{height:34px}
 footer a{text-decoration:none}
 footer a:hover{color:var(--o)}
+
+.micro{margin-top:22px;font-size:14px;color:var(--g);font-style:italic}
+.hint{right:4%;bottom:0;font-size:14px;color:var(--g);font-style:italic}
+.pc{left:0;top:0;padding:12px 22px;border-radius:999px;font-weight:700;white-space:nowrap;cursor:grab;user-select:none;-webkit-user-select:none;touch-action:none;will-change:transform;background:var(--glass);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--edge);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 14px 40px -14px #000;pointer-events:auto}
+.stage{pointer-events:none}
+.pc.drag{cursor:grabbing;z-index:5;border-color:rgba(255,51,1,.7)}
+.pc.hot{font-family:'Fraunces',serif;font-size:clamp(34px,4vw,54px);letter-spacing:-.03em;color:var(--o);padding:14px 28px}
+.pc.big{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:26px}
+.nope{padding-block:clamp(30px,5vw,60px)}
+.no{display:flex;flex-wrap:wrap;gap:14px;padding:32px;border-radius:34px;margin-top:40px}
+.no span{padding:12px 22px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--edge);font-family:'Fraunces',serif;font-style:italic;font-size:clamp(18px,2.2vw,26px);color:var(--g);text-decoration:line-through;text-decoration-color:var(--o);text-decoration-thickness:2px;animation:float 9s ease-in-out infinite}
+.no span:nth-child(2n){animation-duration:11s;animation-delay:-3s}
+.no span:nth-child(3n){animation-duration:13s;animation-delay:-6s}
+.scrub{margin-top:44px;padding:clamp(20px,3vw,36px);border-radius:34px}
+.readout{display:flex;flex-wrap:wrap;gap:8px 32px;align-items:baseline;margin-bottom:22px}
+.time{font-size:clamp(48px,7vw,96px);font-weight:300;letter-spacing:-.04em;line-height:1;min-width:3.3ch}
+#stt{font-size:20px;flex:1}
+.mt{color:var(--g);font-size:14px;font-style:italic}
+.tl{position:relative;height:96px}
+.clips{position:absolute;inset:0;display:flex;gap:6px}
+.clips i{display:flex;align-items:center;padding-inline:16px;border-radius:14px;font-style:normal;font-size:14px;font-weight:600;color:var(--g);background:rgba(255,255,255,.06);border:1px solid var(--edge);overflow:hidden;white-space:nowrap}
+.clips i:nth-child(2){background:rgba(255,51,1,.10)}
+#scr{position:absolute;inset:0;width:100%;height:96px;margin:0;background:none;-webkit-appearance:none;appearance:none;cursor:ew-resize;touch-action:pan-y}
+#scr::-webkit-slider-runnable-track{height:96px;background:none}
+#scr::-moz-range-track{height:96px;background:none}
+#scr::-webkit-slider-thumb{-webkit-appearance:none;width:4px;height:130px;margin-top:-17px;background:var(--o);border-radius:4px;box-shadow:0 0 22px 3px rgba(255,51,1,.7)}
+#scr::-moz-range-thumb{width:4px;height:130px;background:var(--o);border:0;border-radius:4px;box-shadow:0 0 22px 3px rgba(255,51,1,.7)}
+.steps li{transition:border-color .3s,transform .3s}
+.steps li.on{border-color:rgba(255,51,1,.65)}
+.steps li.on .n{color:var(--w)}
 
 @media(max-width:860px){
  .hero{grid-template-columns:1fr;min-height:0}
@@ -117,69 +147,82 @@ footer a:hover{color:var(--o)}
 <div class="wrap">
  <header>
   <div class="bar glass">
-   <a href="#top" aria-label="Inc Studio home"><img src="logo.png" alt="Inc Studio creative agency"></a>
+   <a href="#top" aria-label="Inc Studio home"><img src="logo.png" alt="Inc Studio"></a>
    <nav>
     <a href="#how">How it works</a>
-    <a href="#services">Services</a>
+    <a href="#services">How we help</a>
     <a href="#why">Why us</a>
-    <a class="btn" href="#order">Order now</a>
+    <a class="btn" href="#order">Send footage</a>
    </nav>
   </div>
  </header>
 
  <main id="top" class="hero">
   <div>
-   <h1>Your video, <em>edited in minutes.</em></h1>
-   <p>Inc Studio is a creative agency that works like an online store. Pick a service, send your footage, get it back. No onboarding, no calls, no agency runaround.</p>
+   <h1>Bring the footage. <em>We'll bring the story.</em></h1>
+   <p>Inc Studio is the creative buddy you text when your footage needs more. We add story, your mindset and what's trending, and give it back as a visual experience people stop scrolling for.</p>
    <div class="actions">
-    <a class="btn" href="#order">Get my video edited</a>
-    <a class="btn ghost" href="#services">See services</a>
+    <a class="btn" href="#order">Send my footage</a>
+    <a class="btn ghost" href="#services">See how we help</a>
    </div>
+   <p class="micro">Meetings needed to get started: 0. Just text us like a friend.</p>
   </div>
-  <div class="stage" aria-hidden="true">
-   <div class="px mark" data-depth="14"><img src="mark.png" alt=""></div>
-   <div class="px c1" data-depth="34"><div class="chip glass float"><small>Video editing from</small><span class="price">₹499</span></div></div>
-   <div class="px c2" data-depth="26"><div class="chip glass float"><small>Onboarding</small>None. Zero.</div></div>
-   <div class="px c3" data-depth="42"><div class="chip glass float"><small>Delivered in</small>Minutes</div></div>
-  </div>
+  <div class="stage" aria-hidden="true"><div class="px mark" data-depth="14"><img src="mark.png" alt=""></div><div class="hint">psst. grab something and throw it.</div></div>
  </main>
 </div>
 
+<section class="nope"><div class="wrap">
+ <h2>Things you won't get from us.</h2>
+ <div class="no glass">
+  <span>Discovery calls</span><span>Onboarding decks</span><span>"Let's circle back"</span><span>Kickoff meetings</span><span>Waiting 3 weeks</span><span>Invoices for "strategy"</span><span>Cookie-cutter templates</span><span>Ghosting</span>
+ </div>
+ <p class="lead">What you will get: a buddy who gets your idea and makes it look stunning.</p>
+</div></section>
+
 <section id="how"><div class="wrap">
- <h2>Three steps. No paperwork.</h2>
+ <h2>Watch it happen.</h2>
+ <p class="lead">Drag the playhead. This is the whole process.</p>
+ <div class="scrub glass">
+  <div class="readout"><span class="time serif" id="tm">00:00</span><span id="stt">Footage received. Nice.</span><span class="mt">Meetings held: 0</span></div>
+  <div class="tl">
+   <div class="clips"><i style="flex:30">Your footage</i><i style="flex:45">Story, vibe, trends</i><i style="flex:25">Stunning result</i></div>
+   <input id="scr" type="range" min="0" max="100" value="0" aria-label="Drag to see how fast we work">
+  </div>
+ </div>
  <ol class="steps">
-  <li class="glass float" style="--t:11s"><div class="n">1</div><h3>Ask for a service</h3><p>Choose what you need, like a reel edit or a YouTube cut, and send your footage.</p></li>
-  <li class="glass float" style="--t:13s;--d:-4s"><div class="n">2</div><h3>We edit it</h3><p>Our editors start straight away. No account setup, no onboarding forms.</p></li>
-  <li class="glass float" style="--t:12s;--d:-7s"><div class="n">3</div><h3>Get it in minutes</h3><p>Your finished video is delivered fast, ready to post.</p></li>
+  <li class="glass float" style="--t:11s"><div class="n">1</div><h3>Text us your footage</h3><p>Send the raw clips and tell us your idea, like you would tell a friend.</p></li>
+  <li class="glass float" style="--t:13s;--d:-4s"><div class="n">2</div><h3>We add the magic</h3><p>Story, your mindset and what's trending, blended in. No onboarding, no forms.</p></li>
+  <li class="glass float" style="--t:12s;--d:-7s"><div class="n">3</div><h3>Get a stunning visual</h3><p>Your footage comes back as a visual experience, ready to post, in minutes.</p></li>
  </ol>
 </div></section>
 
 <section id="services" style="padding-top:0"><div class="wrap">
- <h2>What we do</h2>
- <p class="lead">Start with a quick edit today. Bring us the bigger brand work when you're ready.</p>
+ <h2>How we help</h2>
+ <p class="lead">Start with a quick creative boost today. Bring us the bigger stuff when you trust us.</p>
  <div class="svc glass">
-  <div class="row feat"><h3>Video editing</h3><p>Reels, shorts, YouTube videos and ads, cut and polished by real editors.</p><div class="tag">from ₹499</div></div>
-  <div class="row"><h3>Videography</h3><p>We shoot your product, your team or your story, and edit it too.</p><div class="tag">Custom quote</div></div>
-  <div class="row"><h3>Content editing</h3><p>Captions, thumbnails, hooks and repurposed clips for every platform.</p><div class="tag">Custom quote</div></div>
-  <div class="row"><h3>Social media management</h3><p>Planning, posting and growing your pages so you don't have to.</p><div class="tag">Custom quote</div></div>
-  <div class="row"><h3>Branding</h3><p>Logo, colours, tone and a look that people remember.</p><div class="tag">Custom quote</div></div>
+  <div class="row feat"><h3>Story &amp; creative boost</h3><p>Send your footage and your idea. We add story, your mindset and trending ideas, and return it as a stunning visual.</p><div class="tag">from ₹499</div></div>
+  <div class="row"><h3>Shooting with you</h3><p>No footage yet? We shoot it with you, with the story in mind from the first frame.</p><div class="tag">Custom quote</div></div>
+  <div class="row"><h3>Content that fits everywhere</h3><p>Hooks, captions, thumbnails and cuts made for every platform you post on.</p><div class="tag">Custom quote</div></div>
+  <div class="row"><h3>Social media, handled</h3><p>We plan, post and grow your pages, in your voice.</p><div class="tag">Custom quote</div></div>
+  <div class="row"><h3>Your look and feel</h3><p>Logo, colours and tone that feel exactly like you.</p><div class="tag">Custom quote</div></div>
  </div>
 </div></section>
 
 <section id="why" class="why" style="padding-top:0"><div class="wrap">
- <h2>Not your usual agency.</h2>
+ <h2>Not an agency. A buddy.</h2>
  <ul>
-  <li class="glass float" style="--t:12s"><h3>The first of its kind</h3><p>The first ecommerce platform where you buy video editing like you buy anything else online.</p></li>
-  <li class="glass float" style="--t:10s;--d:-5s"><h3>Zero onboarding</h3><p>No onboarding charge and no onboarding process. Ask, and it's done.</p></li>
-  <li class="glass float" style="--t:14s;--d:-2s"><h3>Honest pricing</h3><p>Editing starts at ₹499. You see the price before you order.</p></li>
+  <li class="glass float" style="--t:12s"><h3>The first of its kind</h3><p>The first platform where you order creative help as easily as anything else online.</p></li>
+  <li class="glass float" style="--t:10s;--d:-5s"><h3>Zero onboarding</h3><p>No onboarding charge, no onboarding process. Text us and we start. Creative boost from ₹499.</p></li>
+  <li class="glass float" style="--t:14s;--d:-2s"><h3>You stay you</h3><p>We add creativity to your mindset, we never replace it. Your voice and your story, just louder.</p></li>
  </ul>
 </div></section>
 
 <section id="order" class="cta" style="padding-top:0"><div class="wrap">
  <div class="panel glass">
   <h2>Got footage? Send it over.</h2>
-  <p>Tell us what you need and we'll get started. Video editing from just ₹499.</p>
-  <a class="btn" href="https://wa.me/919370309344?text=Hi%20Inc%20Studio%2C%20I%20want%20a%20video%20edited." target="_blank" rel="noopener">Order on WhatsApp</a>
+  <p>Tell us your idea like you'd tell a friend. We'll add the story and the spark. From just ₹499.</p>
+  
+  <a class="btn" href="https://wa.me/919370309344?text=Hi%20Inc%20Studio%2C%20I%20have%20some%20footage%20and%20an%20idea." target="_blank" rel="noopener">Text us on WhatsApp</a>
  </div>
  <footer>
   <img src="logo.png" alt="Inc Studio">
@@ -195,6 +238,66 @@ footer a:hover{color:var(--o)}
   var cx=e.clientX/innerWidth-.5,cy=e.clientY/innerHeight-.5;
   els.forEach(function(el){var d=+el.dataset.depth;el.style.setProperty('--x',(cx*d).toFixed(1)+'px');el.style.setProperty('--y',(cy*d).toFixed(1)+'px')});
  },{passive:true});
+})();
+</script>
+<script>
+(function(){
+ var st=document.querySelector('.stage');if(!st)return;
+ var RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ var words=['Add story','Your vibe','Trending now','Plot twist','Hook in 3 sec','Make it pop','Sound on','Say it your way',"Let's cook",'Feels like you',"That's a wrap",'₹499'];
+ var items=[],drag=null,mx=-999,my=-999,vis=true;
+ words.forEach(function(w,i){
+  var e=document.createElement('div');e.className='pc'+(w==='₹499'?' hot':(i%4===1?' big':''));e.textContent=w;st.appendChild(e);
+  var o={e:e,w:e.offsetWidth,h:e.offsetHeight,x:0,y:0,vx:(Math.random()-.5)*1.2,vy:(Math.random()-.5)*1.2};
+  o.x=Math.random()*Math.max(1,st.clientWidth-o.w);o.y=Math.random()*Math.max(1,st.clientHeight-o.h);items.push(o);
+  e.addEventListener('pointerdown',function(ev){
+   drag=o;o.dx=ev.clientX-o.x;o.dy=ev.clientY-o.y;o.px=ev.clientX;o.py=ev.clientY;o.lvx=0;o.lvy=0;e.classList.add('drag');e.setPointerCapture(ev.pointerId);ev.preventDefault();
+  });
+  e.addEventListener('pointermove',function(ev){
+   if(drag!==o)return;var r=st.getBoundingClientRect();
+   o.lvx=ev.clientX-o.px;o.lvy=ev.clientY-o.py;o.px=ev.clientX;o.py=ev.clientY;
+   o.x=Math.min(Math.max(ev.clientX-r.left-o.w/2,0),r.width-o.w);o.y=Math.min(Math.max(ev.clientY-r.top-o.h/2,0),r.height-o.h);
+  });
+  function up(){if(drag===o){o.vx=Math.max(-14,Math.min(14,o.lvx*.6));o.vy=Math.max(-14,Math.min(14,o.lvy*.6));drag=null;e.classList.remove('drag')}}
+  e.addEventListener('pointerup',up);e.addEventListener('pointercancel',up);
+  e.style.transform='translate3d('+o.x+'px,'+o.y+'px,0)';
+ });
+ if(RM)return;
+ addEventListener('pointermove',function(e){var r=st.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top},{passive:true});
+ new IntersectionObserver(function(en){vis=en[0].isIntersecting}).observe(st);
+ (function tick(){
+  if(vis){var W=st.clientWidth,H=st.clientHeight;
+   items.forEach(function(o){
+    if(o!==drag){
+     o.vx+=(Math.random()-.5)*.05;o.vy+=(Math.random()-.5)*.05;
+     var cx=o.x+o.w/2-mx,cy=o.y+o.h/2-my,d=Math.sqrt(cx*cx+cy*cy);
+     if(d<130&&d>0){o.vx+=cx/d*.6;o.vy+=cy/d*.6}
+     o.vx*=.985;o.vy*=.985;
+     var sp=Math.sqrt(o.vx*o.vx+o.vy*o.vy);
+     if(sp<.35){o.vx*=1.03;o.vy*=1.03}
+     o.x+=o.vx;o.y+=o.vy;
+     if(o.x<0){o.x=0;o.vx=Math.abs(o.vx)*.9}if(o.x>W-o.w){o.x=W-o.w;o.vx=-Math.abs(o.vx)*.9}
+     if(o.y<0){o.y=0;o.vy=Math.abs(o.vy)*.9}if(o.y>H-o.h){o.y=H-o.h;o.vy=-Math.abs(o.vy)*.9}
+    }
+    o.e.style.transform='translate3d('+o.x.toFixed(1)+'px,'+o.y.toFixed(1)+'px,0)';
+   });
+  }
+  requestAnimationFrame(tick);
+ })();
+})();
+(function(){
+ var r=document.getElementById('scr');if(!r)return;
+ var tm=document.getElementById('tm'),stt=document.getElementById('stt'),cards=document.querySelectorAll('.steps li');
+ var msg=["Footage received. Nice.","Adding story, your vibe and what's trending…","Done. Go make some noise."];
+ function u(){var v=+r.value,sec=Math.round(v/100*299),i=v<30?0:v<75?1:2;
+  tm.textContent='0'+Math.floor(sec/60)+':'+('0'+sec%60).slice(-2);stt.textContent=msg[i];
+  cards.forEach(function(c,k){c.classList.toggle('on',k===i)});}
+ r.addEventListener('input',function(){touched=true;u()});var touched=false;u();
+ if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+ new IntersectionObserver(function(en,ob){
+  if(!en[0].isIntersecting)return;ob.disconnect();var t0=null;
+  (function go(t){if(touched)return;if(!t0)t0=t;var p=Math.min((t-t0)/5000,1);r.value=100*(1-Math.pow(1-p,2));u();if(p<1)requestAnimationFrame(go)})(performance.now());
+ },{threshold:.6}).observe(r);
 })();
 </script>
 </body>
